@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Darling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: black;
+        }
+        .con{
+            background-color: aquamarine;
+            height:500px;
+            width: 400px;
+            position: relative;
+           
+        }
+        .con>img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+
+           
+        }
+        #happy{
+            position: absolute;
+            height: 500px;
+            width: 400px;
+            left: 0;
+            bottom: -222px;
+           
+        }
+        #gift{
+            height: 41%;
+            width: 37%;
+            position: absolute;
+            left: -103px;
+            top: -106px;
+            z-index: -1;
+            transform: rotate(343deg);  
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="con">
+        <img src="./darling.jpg" alt="">
+        <img id="happy" src="./happ.png" alt="">
+        <img id="gift" src="./3.png" alt="">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+        
+    </script>
+</html>
